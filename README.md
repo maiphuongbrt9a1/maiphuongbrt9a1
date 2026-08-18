@@ -17,7 +17,7 @@ Having recently received my provisional graduation certificate, I am actively se
 
 ### 🚀 Featured Projects
 
-#### 🛒 E-Commerce Backend System (`be-commerce-shop`)
+#### 🛒 Fashion shop E-Commerce System - (Backend) - (`be-commerce-shop`)
 
 A robust, highly scalable backend architecture for an online fashion web system.
 
@@ -30,7 +30,7 @@ A robust, highly scalable backend architecture for an online fashion web system.
   - **Inventory & Voucher Management:** Automatically updates stock levels and applies vouchers flexibly at the product, category, and cart levels.
   - **Data Analytics:** Provides reports on revenue, customers, and top-selling products with clear visual charts.
 
-#### 🏡 Airbnb Clone (`airbnb-clone`)
+#### 🏡 StayScape (`airbnb-clone`)
 
 A full-stack property rental platform replicating core Airbnb functionalities.
 
@@ -55,7 +55,7 @@ A full-stack property rental platform replicating core Airbnb functionalities.
 
 ---
 
-#### 🎬 Movie Streaming App (`movie-app-nextjs`)
+#### 🎬 StreamVibe (`movie-app-nextjs`)
 
 A modern, highly interactive landing page for a movie streaming service.
 
