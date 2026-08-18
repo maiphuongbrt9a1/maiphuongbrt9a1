@@ -23,10 +23,12 @@ A robust, highly scalable backend architecture for an online fashion web system.
 
 - **Tech Stack:** NestJS, Prisma, PostgreSQL, Redis, Socket.io, AWS S3.
 - **Key Features:**
-  - Comprehensive order management with state machines.
-  - Seamless third-party integrations: **VNPay** for secure transactions and **GHN (Giao Hàng Nhanh)** for dynamic shipping metrics.
-  - Real-time customer-to-admin chat and live notifications using Socket.io.
-  - Background job processing for canceling expired orders (an expired order is an order that has not completed payment)
+  - **Order Management & Logistics:** Streamlines the order placement flow, automatically calculates shipping fees, and creates shipping orders via the GHN API.
+  - **Secure Online Payments:** Integrates the VNPay payment gateway, handles IPN Webhooks, and supports transaction inquiries.
+  - **Real-time Chat & Notifications:** Enables direct communication between customers and staff, along with system notifications through WebSockets.
+  - **Smart Product Recommendations:** Suggests outfit combinations based on purchase history and market factors.
+  - **Inventory & Voucher Management:** Automatically updates stock levels and applies vouchers flexibly at the product, category, and cart levels.
+  - **Data Analytics:** Provides reports on revenue, customers, and top-selling products with clear visual charts.
 
 #### 🏡 Airbnb Clone (`airbnb-clone`)
 
@@ -34,9 +36,24 @@ A full-stack property rental platform replicating core Airbnb functionalities.
 
 - **Tech Stack:** Next.js, React, Tailwind CSS, Prisma, PostgreSQL, NextAuth.
 - **Key Features:**
-  - Secure user authentication (Credentials & Google OAuth).
-  - Dynamic property listings with image gallery management.
-  - Advanced booking system handling date-range reservations and pricing calculations.
+  - ### 🏨 Guest Features
+    - **Advanced Search:** Multi-step search bar (Location, Dates, Guests) with intelligent popover display.
+    - **Browse Listings:** Airbnb-like property listing grid with thumbnails, names, locations, and pricing.
+    - **Property Details & Booking:** View detailed room information, image gallery, map location, and listing details.
+    - **Booking Form:** Select dates (with unavailable dates disabled), calculate total stay cost (including platform fee logic), and submit a reservation request.
+    - **Booking Management:** The `/bookings` page displays upcoming trips and past stays, with support for canceling reservations.
+
+  - ### 🔑 Host Features
+    - **Host Dashboard:** The `/host` page manages the full list of properties currently being rented out.
+    - **Create & Update Listings:** Property management form allows editing title, description, capacity (adults/children), bathrooms/bedrooms, nightly price, and image gallery.
+    - **View Statistics:** Quickly displays key property metrics and performance indicators.
+
+  - ### 🛡️ Authentication & System
+    - **Sign Up / Sign In:** Supports Email/Password login with securely hashed passwords, as well as Google login.
+    - **Route Protection:** Automatically blocks access to `/bookings` or `/host` pages when the user is not authenticated.
+    - **Seed Data:** Includes demo data scripts for sample properties in NY, LA, Miami, Chicago, and SF for easy testing.
+
+---
 
 #### 🎬 Movie Streaming App (`movie-app-nextjs`)
 
@@ -44,9 +61,15 @@ A modern, highly interactive landing page for a movie streaming service.
 
 - **Tech Stack:** Next.js, React, Tailwind CSS, Motion, Embla Carousel.
 - **Key Features:**
-  - Fluid page transitions and stagger animations built with Motion.
-  - Autoplay video trailer carousels and fully responsive UI components.
-  - Clean, accessible design system using Shadcn UI.
+  - **Home Page:** Hero banner with a typing-style headline animation, featured movie showcase, platform support overview (Devices), and subscription pricing section.
+  - **Movies & Shows Discovery:**
+    - Auto-rotating video trailer slider.
+    - Movie categorization by genre (Genres).
+    - Featured movie lists (Top 10, Trending Now, Must-Watch) presented in a smooth horizontal carousel.
+  - **Subscription Plans:** Detailed comparison of features across the Basic, Standard, and Premium plans in a clear pricing table.
+  - **Support:** Contact form and FAQ section using an accordion interface.
+  - **Dark Mode Default:** Interface is optimized with a dark theme (`.dark` class default), creating a premium cinematic feel.
+  - **Responsive Design:** Fully optimized for mobile devices, tablets, and large desktop screens.
 
 ---
 
