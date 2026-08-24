@@ -76,6 +76,7 @@ A modern, highly interactive landing page for a movie streaming service.
 ### 📫 Let's Connect!
 
 - **Email:** [vomaiphuonghhvt@gmail.com](mailto:vomaiphuonghhvt@gmail.com)
+- **Linkedin:** [https://www.linkedin.com/in/vo-mai-phuong-hcmut-vnu/](https://www.linkedin.com/in/vo-mai-phuong-hcmut-vnu/)
 - **Location:** Ho Chi Minh City, Vietnam 🇻🇳
 
 _"Constantly learning, iteratively refining, and building systems that scale."_
